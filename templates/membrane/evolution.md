@@ -1,6 +1,6 @@
 ---
 type: evolution
-created: 2026-02-17
+created: [DATE]
 status: active
 tags:
   - thread/emergent-agent-model
@@ -35,7 +35,7 @@ related:
 ### System Inception
 **Change:** Initial system soul created.
 **Catalyst:** Framework design.
-**Agents involved:** Gardener (Jacob Turner)
+**Agents involved:** Gardener
 **Gardener approved:** yes
 
 ---

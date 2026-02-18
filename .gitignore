@@ -143,3 +143,9 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Emergent Agent Scaffold — Personal layer
+# /membrane/ and SYSTEM_SOUL.md contain personal info (gardener context, clients, family, etc.)
+# Copy from templates/ to initialize. See README for setup.
+/SYSTEM_SOUL.md
+/membrane/

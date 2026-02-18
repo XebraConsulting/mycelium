@@ -1,6 +1,6 @@
 ---
 type: garden
-created: 2026-02-17
+created: [DATE]
 status: active
 tags:
   - thread/emergent-agent-model
@@ -63,17 +63,13 @@ Every idea, project, file, or decision lives in one of four seasons:
 
 | Seed | Planted | Connects to | Tags |
 |---|---|---|---|
-| Emergent Agent Model as pedagogy for AI literacy curriculum | 2026-02-17 | Emergent Strategy, OpenClaw, system-impacted youth, Interagency HS | #curriculum #framework #liberation-tech |
-| Obsidian as the membrane layer across all projects | 2026-02-17 | Emergent Agent scaffold, knowledge management, cross-project mycelium | #tooling #systems #personal-os |
-| "Mission Operations" — RevOps principles for nonprofits | [date] | Xebra pivot, Yoga Behind Bars, community orgs | #business #nonprofit #methodology |
+| [Your first seed — what's catching your attention?] | [date] | [What does it connect to?] | [tags] |
 
 ### 🌿 Growing
 
 | Project / Thread | Started | Current state | Key files / locations | Tags |
 |---|---|---|---|---|
-| AI Literacy Curriculum — Interagency HS | [date] | Early design. Framework exists. Content TBD. | `/emergent-agent-scaffold/`, [[purpose]] | #curriculum #active |
-| Backblaze managed services | [date] | [current state] | [where are the files?] | #client #xebra |
-| ATS upsell engagement | [date] | [current state] | [where are the files?] | #client #xebra |
+| [Your first active project] | [date] | [Where is it right now?] | [Key files] | [tags] |
 
 ### 🍂 Composting
 
@@ -106,10 +102,7 @@ Move it from Sprouting to 🌿 Growing. Add key files and current state.
 This is the step that prevents the black hole. The difference between "I lost interest and it disappeared" and "I know exactly where that is and what it taught me."
 
 ### When something is fully processed:
-Move it to 🌰 Dormant with a "wake-up signal" — the condition under which it would become relevant again. Examples:
-- "Wake up if a nonprofit asks about operations consulting"
-- "Wake up if the VR education space matures"
-- "Wake up if Kai shows interest in music production"
+Move it to 🌰 Dormant with a "wake-up signal" — the condition under which it would become relevant again.
 
 ### When searching for old things:
 1. **Check tags first.** Every entry is tagged so you can search across seasons.
@@ -124,18 +117,7 @@ Move it to 🌰 Dormant with a "wake-up signal" — the condition under which it
 
 | Tag | Meaning |
 |---|---|
-| #curriculum | AI literacy / teaching work |
-| #framework | Conceptual models and methodologies |
-| #liberation-tech | Technology in service of human freedom |
-| #client | Active client work |
-| #xebra | Xebra Consulting business |
-| #nonprofit | Mission-driven organizational work |
-| #tooling | Systems, tools, and infrastructure |
-| #personal-os | How you organize your own life/work |
-| #systems | Systems thinking and architecture |
-| #business | Business development and strategy |
-| #methodology | Reusable approaches and frameworks |
-| #kai | Related to Kai |
+| [Add tags as they emerge naturally from your work] | |
 
 *Add tags as they emerge naturally. Don't pre-define them all — let them grow.*
 

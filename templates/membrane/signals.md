@@ -1,6 +1,6 @@
 ---
 type: signal
-created: 2026-02-17
+created: [DATE]
 status: active
 tags:
   - thread/emergent-agent-model

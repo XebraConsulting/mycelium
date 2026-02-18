@@ -1,6 +1,6 @@
 ---
 type: arbiter
-created: 2026-02-17
+created: [DATE]
 status: active
 tags:
   - thread/emergent-agent-model
@@ -63,12 +63,12 @@ Every archetype gets a voice. Not a vote — a *perspective*. The gardener (or a
 **Creating — "What wants to be made possible?"**
 - What could this decision unlock?
 - What's the most generative path forward?
-- What would future-Jacob who already succeeded choose?
+- What would your future self who already succeeded choose?
 
 **Tending — "What needs to be protected?"**
 - What relationships, commitments, or boundaries are at stake?
 - Is the gardener's energy being honored?
-- Is Kai's stability factored in?
+- Are family and personal commitments factored in?
 - Is the pace sustainable?
 
 **Composting — "What does past experience teach us?"**
@@ -116,27 +116,27 @@ If no such path is visible yet, that's also an answer. The decision can stay at 
 
 ## Examples
 
-### Example: Taking on a new client engagement
+### Example: Taking on a new commitment
 
-**Sensing:** "The opportunity is real. The client has budget and genuine need. Timeline is tight."
-**Creating:** "This could become a case study for Mission Operations. The work itself is exciting."
-**Tending:** "Jacob already has three active Growing items. Kai's custody week starts Monday. Energy has been steady but not surplus."
-**Composting:** "Last time we said yes to a tight-timeline project while other things were Growing, two items went into the black hole uncomposted. We lost the nutrition."
+**Sensing:** "The opportunity is real. The need is genuine. Timeline is tight."
+**Creating:** "This could become a case study. The work itself is exciting."
+**Tending:** "The gardener already has several active Growing items. Family commitments are this week. Energy has been steady but not surplus."
+**Composting:** "Last time we said yes to a tight-timeline project while other things were Growing, items went into the black hole uncomposted. We lost the nutrition."
 
 **Tension:** Creating and Sensing both say yes. Tending and Composting both say not yet.
 
 **Arbiter's question:** What decision honors all four?
 
-**Possible path:** "Yes, but not until one Growing item is deliberately composted first. And the timeline gets negotiated to protect the custody week."
+**Possible path:** "Yes, but not until one Growing item is deliberately composted first. And the timeline gets negotiated to protect family time."
 
 ---
 
 ### Example: Shifting the purpose heading
 
-**Sensing:** "The AI literacy curriculum just sparked something. The energy is unmistakable."
-**Creating:** "The Emergent Agent Model IS the curriculum. This could be built by living it."
+**Sensing:** "Something just sparked. The energy is unmistakable."
+**Creating:** "This new direction could be built by living it."
 **Tending:** "The excitement is real but the current heading hasn't been composted yet. Shifting without composting creates the black hole."
-**Composting:** "The pattern shows that Jacob's best work happens when the shift is honored with a transition — not when he ghosts the previous thread."
+**Composting:** "The pattern shows that the gardener's best work happens when the shift is honored with a transition — not when they ghost the previous thread."
 
 **Tension:** The excitement is genuine (Sensing + Creating). The transition needs tending (Tending + Composting).
 

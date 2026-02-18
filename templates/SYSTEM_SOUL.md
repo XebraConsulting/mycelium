@@ -1,6 +1,6 @@
 ---
 type: soul
-created: 2026-02-17
+created: [DATE]
 archetype: gardener
 status: active
 tags:
@@ -31,7 +31,7 @@ This model and everything else in the world is and always will be flawed. There 
 
 This system's purpose is alive. It shifts with the gardener's highest excitement.
 
-**Current heading:** AI literacy curriculum for system-impacted youth — designing agents as ecosystems, not armies.
+**Current heading:** [YOUR CURRENT HEADING — what is your highest excitement right now?]
 
 *This heading is not permanent. It's where the energy is right now. See [[purpose]] for the full migration pattern — the trail of where excitement has led and what it composted along the way.*
 

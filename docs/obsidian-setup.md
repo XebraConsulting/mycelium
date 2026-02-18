@@ -149,8 +149,8 @@ Tags follow a consistent naming convention across the system:
 `#crack` — Things that don't resolve. The Mbari Factor. Tensions held, not collapsed.
 
 ### Domain Tags
-These emerge organically from the [[garden]] tag index:
-- `#curriculum`, `#framework`, `#liberation-tech`, `#client`, `#xebra`, `#nonprofit`, `#tooling`, `#personal-os`, `#systems`, `#business`, `#methodology`, `#kai`
+These emerge organically from the [[garden]] tag index. Examples:
+- `#curriculum`, `#framework`, `#liberation-tech`, `#client`, `#nonprofit`, `#tooling`, `#personal-os`, `#systems`, `#business`, `#methodology`
 
 *Add new tags as they emerge naturally. The taxonomy grows with the work.*
 

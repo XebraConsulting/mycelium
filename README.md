@@ -37,7 +37,7 @@ The human is the **Gardener** — not a manager, not a user. The gardener sets d
 
 ## Setup
 
-### Clone and open in Cursor
+### 1. Clone and open in Cursor
 
 ```bash
 git clone https://github.com/XebraConsulting/mycelium.git
@@ -46,38 +46,70 @@ cd mycelium
 
 Open the folder in Cursor. The `.cursorrules` file auto-loads for every agent session — no manual configuration needed.
 
-### Customize the soul
+### 2. Initialize your personal membrane
 
-Edit `SYSTEM_SOUL.md` to set your current heading and values. This is the fractal seed — every agent reads it before doing anything.
+The `templates/` folder contains generic scaffolds with placeholders. Your actual working files (`SYSTEM_SOUL.md` and everything in `membrane/`) are git-ignored so personal info never hits the repo.
 
-### (Optional) Connect to Obsidian
+Copy the templates to create your local membrane:
 
-The membrane is plain markdown with YAML frontmatter. Point an Obsidian vault at this directory and install the Dataview plugin to get live views across the system. See `obsidian-setup.md` for the full guide.
+```bash
+cp templates/SYSTEM_SOUL.md .
+mkdir -p membrane
+cp templates/membrane/*.md membrane/
+```
+
+### 3. Customize the soul
+
+Edit `SYSTEM_SOUL.md` to set your current heading and values. This is the fractal seed — every agent reads it before doing anything. Fill in the `[PLACEHOLDER]` fields with your actual context.
+
+Then fill in `membrane/state.md` (your current focus and energy) and `membrane/garden.md` (your active projects and seeds).
+
+### 4. (Optional) Connect to Obsidian
+
+The membrane is plain markdown with YAML frontmatter. Point an Obsidian vault at this directory and install the Dataview plugin to get live views across the system. See `docs/obsidian-setup.md` for the full guide.
 
 ## Structure
 
 ```
 mycelium/
-├── SYSTEM_SOUL.md              ← Fractal seed — purpose, values, ethical boundaries
-├── .cursorrules                ← Global agent protocol (auto-loaded by Cursor)
+│
+│   PERSONAL LAYER (git-ignored — never leaves your machine)
+│
+├── SYSTEM_SOUL.md                 ← Your fractal seed with real context
+├── membrane/                      ← Your living system
+│   ├── state.md                   ← Gardener focus, energy, active threads
+│   ├── signals.md                 ← Cross-agent observations
+│   ├── garden.md                  ← Ideas, projects, seeds across seasons
+│   ├── purpose.md                 ← Migration pattern of excitement
+│   ├── arbiter.md                 ← Decision records
+│   ├── learnings.md               ← Append-only learning log
+│   ├── compost.md                 ← Failure → nutrition
+│   └── evolution.md               ← Soul change history
+│
+│   FRAMEWORK LAYER (tracked in git — safe to share)
+│
+├── templates/                     ← Generic scaffolds with placeholders
+│   ├── SYSTEM_SOUL.md
+│   └── membrane/
+│       ├── state.md
+│       ├── signals.md
+│       ├── garden.md
+│       ├── purpose.md
+│       ├── arbiter.md
+│       ├── learnings.md
+│       ├── compost.md
+│       └── evolution.md
+├── .cursorrules                   ← Global agent protocol (auto-loaded by Cursor)
 ├── .cursor/
 │   └── agents/
-│       ├── sensing.md          ← Sensing archetype prompt
-│       ├── creating.md         ← Creating archetype prompt
-│       ├── tending.md          ← Tending archetype prompt
-│       └── composting.md       ← Composting archetype prompt
-├── membrane/
-│   ├── state.md                ← System state — gardener focus, energy, active threads
-│   ├── signals.md              ← Cross-agent observations and offers
-│   ├── garden.md               ← Living garden — ideas move through seasons, never die
-│   ├── purpose.md              ← The migration pattern — where excitement has led
-│   ├── arbiter.md              ← Decision protocol — the Arbiter's Table
-│   ├── learnings.md            ← Append-only learning log
-│   ├── compost.md              ← Failure → nutrition processing
-│   └── evolution.md            ← System soul change history
-├── obsidian-setup.md           ← Guide for Obsidian integration
-├── LICENSE                     ← MIT
-└── README.md                   ← You are here
+│       ├── sensing.md             ← Sensing archetype prompt
+│       ├── creating.md            ← Creating archetype prompt
+│       ├── tending.md             ← Tending archetype prompt
+│       └── composting.md          ← Composting archetype prompt
+├── docs/
+│   └── obsidian-setup.md          ← Obsidian integration guide
+├── README.md                      ← You are here
+└── LICENSE                        ← MIT
 ```
 
 ## Key Concepts
@@ -85,6 +117,12 @@ mycelium/
 ### The Membrane
 
 The `membrane/` directory is the shared nervous system. Agents don't talk to each other directly — they read from and write to the membrane. This creates asynchronous, persistent awareness across sessions.
+
+### The Two-Layer Architecture
+
+**Framework layer** (tracked in git): archetype prompts, rules, protocols, templates. This is the reusable scaffold.
+
+**Personal layer** (git-ignored): your `SYSTEM_SOUL.md` and all `membrane/*.md` files. This is where your life, projects, clients, and context live. It never leaves your machine.
 
 ### The Garden
 
@@ -143,8 +181,6 @@ Give Sensing and Creating the same open-ended problem. Have each update the memb
 
 ## Design
 
-By Jacob Turner ([Xebra Consulting](https://github.com/XebraConsulting)), 2026.
 Built on Adrienne Maree Brown's [Emergent Strategy](https://www.akpress.org/emergentstrategy.html).
-Framework developed in conversation with Claude (Anthropic).
 
 MIT License.
