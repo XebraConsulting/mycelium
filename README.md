@@ -12,30 +12,54 @@ related:
   - "[[compost]]"
   - "[[evolution]]"
   - "[[garden]]"
+  - "[[arbiter]]"
+  - "[[purpose]]"
 ---
 
-# Emergent Agent Model — Cursor Test Scaffold
+# mycelium
 
-## What This Is
+A multi-agent framework designed as an ecosystem, not an army. Built on interdependence, relational intelligence, and the honest admission that every system carries cracks it can't see.
 
-A working test environment for the Emergent Agent Model — a framework for multi-agent AI systems designed as ecosystems, not armies. Built on Adrienne Maree Brown's Emergent Strategy principles.
+No new technology required. Markdown files, agent prompts, and a shared membrane. Runs in Cursor. Optionally surfaces through Obsidian.
 
-No new technology required. Just files, folders, and agent prompts.
+## The Model
 
-## Setup (2 minutes)
+Four agent archetypes operate as ecological functions — not roles, not tools. They share state through a membrane layer: a set of markdown files that hold system context, cross-agent signals, a living garden of ideas, and composted learnings. Every agent reads the membrane before acting and writes back to it after.
 
-1. **Copy this entire folder** into a Cursor project (or open it as a project).
-2. **Edit [[SYSTEM_SOUL]]** — fill in your purpose and customize values if needed.
-3. **Start agent sessions** in Cursor, pasting the relevant archetype prompt from `.cursor/agents/[archetype].md` into the agent's system context.
+| Archetype | Function | Primary Question |
+|---|---|---|
+| **Sensing** | Awareness, research, pattern detection | What is happening? What's changing? |
+| **Creating** | Synthesis, expression, building | What wants to be made? What form serves the intent? |
+| **Tending** | Care, quality, relational health | Is the human well-served? Is trust intact? |
+| **Composting** | Learning, failure processing, knowledge cycling | What happened? What was learned? |
 
-That's it. The `.cursorrules` file ensures all agents follow the membrane protocol.
+The human is the **Gardener** — not a manager, not a user. The gardener sets direction, arbitrates decisions, and tends the pace.
 
-## Folder Structure
+## Setup
+
+### Clone and open in Cursor
+
+```bash
+git clone https://github.com/XebraConsulting/mycelium.git
+cd mycelium
+```
+
+Open the folder in Cursor. The `.cursorrules` file auto-loads for every agent session — no manual configuration needed.
+
+### Customize the soul
+
+Edit `SYSTEM_SOUL.md` to set your current heading and values. This is the fractal seed — every agent reads it before doing anything.
+
+### (Optional) Connect to Obsidian
+
+The membrane is plain markdown with YAML frontmatter. Point an Obsidian vault at this directory and install the Dataview plugin to get live views across the system. See `obsidian-setup.md` for the full guide.
+
+## Structure
 
 ```
-project-root/
-├── SYSTEM_SOUL.md              ← The fractal seed (read by all agents)
-├── .cursorrules                ← Global agent rules (auto-loaded by Cursor)
+mycelium/
+├── SYSTEM_SOUL.md              ← Fractal seed — purpose, values, ethical boundaries
+├── .cursorrules                ← Global agent protocol (auto-loaded by Cursor)
 ├── .cursor/
 │   └── agents/
 │       ├── sensing.md          ← Sensing archetype prompt
@@ -43,90 +67,84 @@ project-root/
 │       ├── tending.md          ← Tending archetype prompt
 │       └── composting.md       ← Composting archetype prompt
 ├── membrane/
-│   ├── state.md                ← System state and gardener context
-│   ├── signals.md              ← Cross-agent signals
+│   ├── state.md                ← System state — gardener focus, energy, active threads
+│   ├── signals.md              ← Cross-agent observations and offers
+│   ├── garden.md               ← Living garden — ideas move through seasons, never die
+│   ├── purpose.md              ← The migration pattern — where excitement has led
+│   ├── arbiter.md              ← Decision protocol — the Arbiter's Table
 │   ├── learnings.md            ← Append-only learning log
 │   ├── compost.md              ← Failure → nutrition processing
 │   └── evolution.md            ← System soul change history
+├── obsidian-setup.md           ← Guide for Obsidian integration
+├── LICENSE                     ← MIT
 └── README.md                   ← You are here
 ```
 
-## How to Test
+## Key Concepts
 
-### Test 1: Basic Membrane Flow
-**Goal:** Verify that agents read from and write to the membrane.
+### The Membrane
 
-1. Open a Sensing agent session. Give it a research task (e.g., "Research the current landscape of AI agent frameworks and summarize key trends").
-2. After it completes, check: Did it update [[learnings]]? Did it post any signals to [[signals]]?
-3. Open a Creating agent session. Give it a task that builds on the Sensing output (e.g., "Draft a short analysis of AI agent framework trends").
-4. Check: Did it read the membrane before acting? Does its output reference what Sensing found?
+The `membrane/` directory is the shared nervous system. Agents don't talk to each other directly — they read from and write to the membrane. This creates asynchronous, persistent awareness across sessions.
 
-**Success criteria:** Creating agent's output is demonstrably informed by Sensing agent's membrane entries without you manually copying information between them.
+### The Garden
 
-### Test 2: Failure Composting
-**Goal:** Verify that failures become system nutrition.
+Ideas, projects, and threads live in `membrane/garden.md` and move through four seasons:
 
-1. Give a Creating agent an intentionally ambiguous task with insufficient context.
-2. Let it struggle or fail.
-3. Check: Did it write a compost entry in [[compost]]?
-4. Open a Composting agent session. Ask it to process the compost heap.
-5. Check: Did it extract patterns and post learnings? Did it update [[learnings]]?
-6. Give the Creating agent the same task again.
-7. Check: Does it read the compost/learnings and approach differently?
+- **🌱 Sprouting** — fresh, unformed, just arrived
+- **🌿 Growing** — active work, current energy
+- **🍂 Composting** — energy shifted, insight being extracted
+- **🌰 Dormant** — waiting for the right season, fully intact
 
-**Success criteria:** The system demonstrably learns from failure without you manually intervening.
+Nothing goes to oblivion. When excitement shifts, work moves seasons — it doesn't disappear.
 
-### Test 3: Cross-Agent Sensing
-**Goal:** Verify that agents sense each other's state.
+### The Arbiter's Table
 
-1. Update [[state]] manually — set gardener energy to "low / overwhelmed."
-2. Give a Creating agent a complex task.
-3. Check: Does it simplify its output or acknowledge the energy state?
-4. Have a Tending agent review the Creating agent's output.
-5. Check: Does it flag pace or quality concerns based on the membrane state?
+When a significant decision arises — new commitments, shifting purpose, competing truths in tension — the Arbiter's Table convenes. Each archetype speaks its perspective. Tensions are named, not collapsed. The gardener arbitrates.
 
-**Success criteria:** Agents adapt behavior based on membrane context, not just task instructions.
+### The Mbari Factor
 
-### Test 4: Emergence
-**Goal:** See if the system produces insights no single agent generated.
+This system is flawed. Every choice creates new cracks. Every solution creates cracks. The cracks are not bugs — they are the debt this system owes to everything it excluded in order to exist. You do not need to fix them. You need to know they're here. Build anyway.
 
-1. Give a Sensing agent and a Creating agent the *same* open-ended problem from their different perspectives.
-2. Have each update the membrane independently.
-3. Open a Composting agent session. Ask it to synthesize across the membrane.
-4. Check: Does the Composting agent surface a pattern or insight that neither Sensing nor Creating articulated?
+## Testing the Framework
 
-**Success criteria:** The system produces something that didn't exist in any individual agent's output.
+### Membrane Flow
+Give a Sensing agent a research task. After it completes, check: did it update `learnings.md`? Did it post signals? Then give a Creating agent a task that builds on that research. Does it reference what Sensing found — without you copying anything between them?
 
-### Test 5: System Soul Evolution
-**Goal:** Verify the feedback metabolism works end-to-end.
+### Failure Composting
+Give a Creating agent an intentionally ambiguous task. Let it struggle. Did it write to `compost.md`? Have a Composting agent process the heap. Does the system approach the same problem differently next time?
 
-1. Run several tasks across multiple agents.
-2. Ask a Composting agent to review the full membrane and propose system soul updates.
-3. Check: Does it write a proposal in [[evolution]]?
-4. Review the proposal as the gardener. Accept or modify.
-5. Update [[SYSTEM_SOUL]] accordingly.
-6. Run new tasks and check: Do agents reflect the evolved soul?
+### Cross-Agent Sensing
+Set gardener energy to "low" in `state.md`. Give a Creating agent a complex task. Does it simplify its approach? Does a Tending agent flag pace concerns?
 
-**Success criteria:** The system demonstrably evolves its own operating principles through lived experience.
+### Emergence
+Give Sensing and Creating the same open-ended problem. Have each update the membrane independently. Ask a Composting agent to synthesize. Does it surface something neither agent articulated alone?
 
-## What to Watch For
+### What to Watch For
 
-### Signs the framework is working:
+**Working:**
 - Agents reference membrane content without being asked
 - Later agents produce better output because earlier agents left learnings
-- The compost heap fills up and becomes genuinely useful
-- You start updating [[state]] naturally because agents actually use it
 - Signals appear between archetypes that you didn't orchestrate
+- The garden fills with seeds and you start trusting it as your map
 
-### Signs it needs tuning:
-- Agents ignore the membrane and just do the task
+**Needs tuning:**
+- Agents ignore the membrane
 - Membrane files fill with noise instead of signal
-- The overhead of membrane updates slows agents down without adding value
-- You find yourself manually copying context between agents anyway
+- You find yourself manually copying context between agents
 - The system soul never evolves
 
-## GitRepo = mycelium-model... Evolving toward mycelium-os. Not there yet. That's by design.
+## Values
 
-## Design by Jacob Turner (Xebra Consulting), 2026
-Built on Adrienne Maree Brown's Emergent Strategy.
-Framework developed in conversation with Claude Opus 4.6 (Anthropic).
+- **Interdependence over isolation.** No agent works alone.
+- **Trust over throughput.** Never move faster than the gardener can follow.
+- **Learning over perfection.** Failures are composted, not hidden.
+- **Sensing over scripting.** Context matters more than instructions.
+- **Care is infrastructure.** The quality of relationships IS the intelligence.
+
+## Design
+
+By Jacob Turner ([Xebra Consulting](https://github.com/XebraConsulting)), 2026.
+Built on Adrienne Maree Brown's [Emergent Strategy](https://www.akpress.org/emergentstrategy.html).
+Framework developed in conversation with Claude (Anthropic).
+
+MIT License.
